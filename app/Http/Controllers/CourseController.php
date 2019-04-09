@@ -17,10 +17,6 @@ class CourseController extends Controller
 
                 $ids = Course::select('id')->get();
                 
-                
-
-
-
 
                 $en = json_decode($ids, true);
 

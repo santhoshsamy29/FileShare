@@ -28,6 +28,8 @@ Route::post('student/login','StudentController@login');
 Route::post('file/upload','FileController@upload');
 Route::post('file/show','FileController@show');
 
+Route::post('file/chumma','FileController@getTeacherNameFromCourseId');
+
 Route::get('course/show','CourseController@show');
 
 Route::post('enroll','EnrollmentController@enroll');
