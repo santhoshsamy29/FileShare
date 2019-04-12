@@ -27,8 +27,10 @@ Route::post('student/login','StudentController@login');
 
 Route::post('file/upload','FileController@upload');
 Route::post('file/show','FileController@show');
+Route::post('file/getall','FileController@getAll');
 
-Route::post('file/chumma','FileController@getTeacherNameFromCourseId');
+Route::post('notification/add', 'NotificationController@store');
+Route::post('notification/fetch', 'NotificationController@fetch');
 
 Route::get('course/show','CourseController@show');
 

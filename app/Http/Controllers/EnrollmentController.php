@@ -63,9 +63,7 @@ class EnrollmentController extends Controller
 
     public function display(Request $request){
 
-        
         $course_list =array();
-
 
         try{
             $validator = Validator::make($request->all(),[
@@ -112,7 +110,6 @@ class EnrollmentController extends Controller
                 
             }
 
-
         } catch (Exception $error){
             $errors= $error->getMessage();
 			return  response([
@@ -147,7 +144,6 @@ class EnrollmentController extends Controller
                 
             }
 
-
         } catch (Exception $error){
             $errors= $error->getMessage();
 			return  response([
@@ -159,7 +155,6 @@ class EnrollmentController extends Controller
     }
 
     public function getTeacherNameFromCourseId(Request $request){
-
 
         try{
             $validator = Validator::make($request->all(),[
@@ -185,7 +180,6 @@ class EnrollmentController extends Controller
                 
             }
 
-
         } catch (Exception $error){
             $errors= $error->getMessage();
 			return  response([
@@ -199,7 +193,6 @@ class EnrollmentController extends Controller
 
 
     public function getCourseNameFromCourseId(Request $request){
-
 
         try{
             $validator = Validator::make($request->all(),[
@@ -223,7 +216,6 @@ class EnrollmentController extends Controller
                 ]);
                 
             }
-
 
         } catch (Exception $error){
             $errors= $error->getMessage();
